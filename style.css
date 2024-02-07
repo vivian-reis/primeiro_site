@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Fira+Code&family=JetBrains+Mono&family=Press+Start+2P&family=Source+Code+Pro&display=swap');
+:root{
+
+
+    --cor1: #515459;
+    --cor2: #F2A74B;
+    --cor3: #F27B35;
+    --cor4: #BF391B;
+    --cor5: #0D0D0D;
+    --cor6: #5154594f;
+   
+    --fonte01: 'Anonymous Pro', monospace;
+    --fonte02: 'Fira Code', monospace;
+    --fonte03: 'JetBrains Mono', monospace;
+    --fonte04: 'Press Start 2P', system-ui;
+    --fonte05: 'Source Code Pro', monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    padding: 25px 0;
+    background-color: var(--cor5);
+    color: var(--cor4);
+    text-align: center;
+    font-family: var(--fonte04);
+    font-size: 0.8em;
+}
+main{
+    background-color: var(--cor6);
+    color: white;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 1rem;
+    background-color: var(--cor5);
+    padding-bottom: 10px;
+}
+.menu li a{
+    color: var(--cor2);
+    margin-left: 10px;
+    font-family: var(--fonte05);
+}
+.menu li a:hover{
+    background-color: var(--cor3);
+    color: var(--cor1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#inicio{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 50px 0px 50px 0px;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor1));
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
+    font-family: var(--fonte02);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.215)
+}
+#inicio img{
+    width: 50%;
+    padding-right: 20px;
+    object-fit: cover;
+}
+#inicio .inicio a{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+#inicio .inicio strong{
+    color: var(--cor4);
+}
+.inicio h1{
+    text-align: center;
+}
+.inicio p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    margin: 2% 15% 5% 15%;
+    width: 70%;
+}
+.conteudo{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+#youtube, #programação, #sql, #inspirações, #ferramentas, #videos, #favicons, #cores, #fontes, #simbolos, #conversores, #projetos{
+    background-color: var(--cor5);
+    max-width: 900px;
+    min-width: 350px;
+    border-radius: 0px 20px;
+    border: 2px solid var(--cor2);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.43);
+}
+#youtube h2, #programação h2, #sql h2, #inspirações h2, #ferramentas h2, #videos h2, #favicons h2, #cores h2, #fontes h2, #simbolos h2, #conversores h2, #projetos h2{
+    margin: 20px;
+    text-align: center;
+    font-family: var(--fonte03);
+    font-size: 1.2em;
+    font-weight: normal;
+    padding-bottom: 10px;
+    height: 50px;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.links li{
+    display: inline;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+.links li a{
+    background-color: var(--cor4);
+    color: var(--cor2);
+    padding: 7px;
+    border-radius: 10px;
+    font-family: var(--fonte01);
+}
+.links li a:hover, form button:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    font-weight: bold;
+}
+#comentários{
+    background-color: var(--cor3);
+    padding-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+#comentários h3{
+    font-family: var(--fonte02);
+    margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+#comentários p{
+    width: 320px;
+    color: var(--cor5);
+    font-family: var(--fonte05);
+    text-align: justify;
+    padding: 10px;
+}
+form input, form textarea, form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-family: var(--fonte03);
+}
+form textarea {
+    resize: none;
+    height: 180px;
+}
+form button {
+    background-color: var(--cor4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--fonte04);
+    font-size: 0.8em;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: var(--fonte01);
+}
