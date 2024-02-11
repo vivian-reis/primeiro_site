@@ -1,15 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Fira+Code&family=JetBrains+Mono&family=Press+Start+2P&family=Source+Code+Pro&display=swap');
 :root{
-
-
-    --cor1: #515459;
+    --cor1: #00000072;
     --cor2: #F2A74B;
     --cor3: #F27B35;
     --cor4: #BF391B;
     --cor5: #0D0D0D;
-    --cor6: #5154594f;
-   
+    
     --fonte01: 'Anonymous Pro', monospace;
     --fonte02: 'Fira Code', monospace;
     --fonte03: 'JetBrains Mono', monospace;
@@ -37,6 +34,7 @@ main{
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
+    padding-bottom: 20px;
 }
 .menu {
     display: grid;
@@ -54,7 +52,7 @@ main{
 }
 .menu a:hover{
     background-color: var(--cor3);
-    color: var(--cor1);
+    color: var(--cor5);
     border-radius: 5px;
     max-width: 180px;
     text-align: center;
@@ -97,7 +95,7 @@ main{
     min-width: 350px;
     border-radius: 0px 20px;
     border: 2px solid var(--cor2);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.43);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.43);
 }
 #youtube h2, #programação h2, #sql h2, #inspirações h2, #ferramentas h2, #videos h2, #favicons h2, #cores h2, #fontes h2, #simbolos h2, #conversores h2, #projetos h2{
     margin: 20px;
@@ -132,11 +130,15 @@ main{
     font-weight: bold;
 }
 #comentários{
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     padding-bottom: 10px;
-    display: grid;
+    display: block;
     justify-content: center;
-    margin-top: 20px;
+    margin: auto;
+    max-width: 380px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.215);
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.43);
 }
 #comentários h3{
     font-family: var(--fonte02);
@@ -146,21 +148,23 @@ main{
 }
 #comentários p{
     width: 320px;
-    color: var(--cor5);
+    color: white;
     font-family: var(--fonte05);
     text-align: justify;
     padding: 10px;
+    margin: auto;
 }
 form input, form textarea, form button{
     display: block;
     width: 320px;
-    margin-bottom: 8px;
     padding: 8px;
     font-family: var(--fonte03);
+    margin: auto;
+    margin-bottom: 8px;
 }
 form textarea {
     resize: none;
-    height: 180px;
+    margin-bottom: 8px;
 }
 form button {
     background-color: var(--cor4);
