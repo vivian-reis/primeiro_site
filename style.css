@@ -41,16 +41,19 @@ main{
     background-color: var(--cor5);
     padding-bottom: 10px;
 }
-.menu li a{
+.menu a{
     color: var(--cor2);
     margin-left: 10px;
     font-family: var(--fonte05);
+    padding: 5px 10px;
 }
-.menu li a:hover{
+.menu a:hover{
     background-color: var(--cor3);
     color: var(--cor1);
-    padding: 5px 10px;
     border-radius: 5px;
+    max-width: 180px;
+    text-align: center;
+    transition: 0.5s;
 }
 #inicio{
     display: flex;
