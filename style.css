@@ -33,6 +33,10 @@ header{
 main{
     background-color: var(--cor6);
     color: white;
+    background-image: url(midias/pexels-danny-meneses-640.jpg);
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
 }
 .menu {
     display: grid;
@@ -40,6 +44,7 @@ main{
     gap: 1rem;
     background-color: var(--cor5);
     padding-bottom: 10px;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.349);
 }
 .menu a{
     color: var(--cor2);
@@ -56,30 +61,23 @@ main{
     transition: 0.5s;
 }
 #inicio{
-    display: flex;
-    margin-bottom: 20px;
+    display: grid;
+    width: 60%;
     padding: 50px 0px 50px 0px;
-    background-image: linear-gradient(to top, var(--cor5), var(--cor1));
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
     font-family: var(--fonte02);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.215)
 }
-#inicio img{
-    width: 50%;
-    padding-right: 20px;
-    background-size: cover;
-}
-#inicio .inicio a{
+#inicio a{
     text-decoration: underline;
     color: var(--cor3);
 }
-#inicio .inicio strong{
+#inicio strong{
     color: var(--cor4);
 }
-.inicio h1{
+#inicio h1{
     text-align: center;
 }
-.inicio p{
+#inicio p{
     text-align: justify;
     text-indent: 30px;
     line-height: 2em;
