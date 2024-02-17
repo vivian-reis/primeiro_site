@@ -6,12 +6,16 @@
     <link rel="shortcut icon" href="midias/favicon.ico" type="image/x-icon">
     <title>Meus Estudos em TI</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Primeiro Site</h1>
     </header>
-    <nav class="menu">
+    <span id="simb" class="material-symbols-outlined" onclick="clickSimb()">
+        menu
+        </span> 
+    <nav id="menu">
         <a href="#youtube">Youtube</a>
         <a href="#programação">Programação</a>
         <a href="#sql">SQL</a>
@@ -148,5 +152,22 @@
             </section>
     </main>
     <footer>Copyright &copy;2024 Todos os Direitos Reservados por Vivian Reis</footer>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >=768){
+                menu.style.display = 'grid'
+            } else {
+                menu.style.display = 'none'
+            }
+        } 
+        
+        function clickSimb(){
+            if (menu.style.display == 'grid'){
+                menu.style.display = 'none'
+            }  else{
+                menu.style.display = 'grid'
+            }
+        }
+    </script>
 </body>
 </html>
